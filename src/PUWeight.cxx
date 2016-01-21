@@ -40,10 +40,10 @@ PUWeight::PUWeight()
 // called once.
 void PUWeight::initPUWeights(const std::string& dataRootFileName, const std::string& dataRootHistName, const std::string& mcScenario) {
 
-  if( isInit_ ) {
-    std::cerr << "\n\nERROR in PUWeight: weights already initialised" << std::endl;
-    throw std::exception();
-  }
+  // if( isInit_ ) {
+  //   std::cerr << "\n\nERROR in PUWeight: weights already initialised" << std::endl;
+  //   throw std::exception();
+  // }
 
   // Get data distribution from file
   TFile file(dataRootFileName.c_str(), "READ");
@@ -65,7 +65,7 @@ void PUWeight::initPUWeights(const std::string& dataRootFileName, const std::str
   // Clean up
   delete h;
 
-  isInit_ = true;
+  // isInit_ = true;
 }
 
 //==============================================================================================
