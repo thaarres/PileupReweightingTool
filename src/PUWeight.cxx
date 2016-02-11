@@ -65,7 +65,7 @@ void PUWeight::initPUWeights(const std::string& dataRootFileName, const std::str
   // Clean up
   delete h;
 
-  // isInit_ = true;
+  isInit_ = true;
 }
 
 //==============================================================================================
