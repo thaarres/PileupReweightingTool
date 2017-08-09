@@ -9,7 +9,7 @@ PileupReweightingTool::PileupReweightingTool( SCycleBase* parent, const char* na
   SetLogName( name );
   
   DeclareProperty( m_name + "_HistoPath", m_histoPath = "$SFRAME_DIR/../PileupReweightingTool/histograms/" );
-  DeclareProperty( m_name + "_DataRootFileName", m_dataRootFileName = "biasXsec_72000.root" );
+  DeclareProperty( m_name + "_DataRootFileName", m_dataRootFileName = "DataPUDistribution.root" );
   DeclareProperty( m_name + "_DataRootHistName", m_dataRootHistName = "pileup" );
   DeclareProperty( m_name + "_MCScenario", m_mcScenario = "PUS25ns" );
 
